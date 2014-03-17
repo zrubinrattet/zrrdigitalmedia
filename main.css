@@ -1,0 +1,228 @@
+body {
+	background-color: #E6E6E6;
+}
+
+#headerBG{
+	padding: 20px 0 0;
+	background-color: #E6E6E6;
+}
+
+#navRow{
+	background-color: #E6E6E6;
+	position: fixed;
+	top: 100px;
+	height: 40px;
+}
+
+#stickyHeader{
+	position: fixed;
+	top: 0px;
+}
+#topFiller{
+	height: 190px;
+}
+
+span{
+	line-height: 50px;
+}
+
+.center-pills { 
+	display: inline-block; 
+}
+.headerText{
+	font-family: bebas_neueregular;
+	font-size: 80px;
+	text-align: center;
+	color: #666666;
+}
+.nav-pills > li > a,
+.nav-pills > li > a:focus {
+	font-family: bebas_neueregular;
+	font-size: 40px;
+	color: #666666;
+	padding-left: 20%;
+	background-color: transparent;
+	transition: color 0.25s ease 0s;
+}
+.nav-pills > li > a:hover{
+	background-color: transparent;
+	color: #B82858;
+}
+.greyText{
+	color: #666666;
+}
+.magentaText {
+	color: #B82858 !important;
+}
+
+h1{
+	font-family: futura_ltheavy;
+	font-size: 60px;
+	color: #B82858;
+	padding-bottom: 20px;
+}
+h3{
+	color: #666666;
+}
+
+.thumbnail {
+	border: 0px;
+	box-shadow: none;
+}
+
+.lb-image{
+max-width: inherit;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus {
+	box-shadow: none;
+	border: none;
+	text-decoration: none;
+}
+
+.thumbnail > h3,
+.thumbnail > p {
+	color: #333333;
+	font-family: futura_ltbook;
+	text-decoration: none;
+	transition: all 0.25 ease 0s;
+}
+
+
+.thumbnail > h3:hover,
+.thumbnail > h3:focus,
+.thumbnail > p:hover,
+.thumbnail > p:focus {
+	color: #B82858;
+	text-decoration: none;
+}
+
+.thumbnails li:nth-child(3n+1) {
+    margin-left: 0;
+ }
+
+p a {
+	transition: all 0.25 ease 0s;
+	color: #666666;
+	font-family: futura_ltheavy;
+}
+
+p a:hover,
+p a:focus {
+	color: #B82858;
+	font-family: futura_ltheavy;
+	text-decoration: none;
+}
+
+ #aboutText{
+ 	font-family: futura_ltbook;
+ 	font-size: 20px;
+ 	line-height: auto;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+ 	margin: 0px;
+ }
+h2, h3 {
+ 	line-height: 30px;
+ }
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1200px){
+	h3{
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	h1{
+		font-size: 50px;
+	}
+	.headerText{
+		font-size: 60px;
+	}
+	#navRow{
+		top: 80px;
+		height: 38px;
+	}
+	#topFiller{
+		height: 140px;
+	}
+	.nav-pills > li > a,
+	.nav-pills > li > a:focus {
+		font-size: 36px;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	h1{
+		font-size: 40px;
+	}
+	h3{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.headerText{
+		font-size: 40px;
+	}
+	#headerBG{
+		padding: 0px;
+	}
+	#navRow{
+		top: 50px;
+		height: 30px;
+	}
+	#topFiller{
+		height: 100px;
+	}
+	.nav-pills > li > a,
+	.nav-pills > li > a:focus {
+		font-size: 30px;
+		padding: 5%;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	h1{
+		font-size: 30px;
+		padding-bottom: 0px;
+	}
+	h3{
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.thumbnail p {
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.headerText{
+		font-size: 24px;
+	}
+	#headerBG{
+		padding: 0px;
+		height:40px;
+	}
+	#navRow{
+		top: 40px;
+		height: 25px;
+	}
+	#topFiller{
+		height: 70px;
+	}
+	.nav{
+		margin: 0;
+	}
+	.nav-pills > li > a,
+	.nav-pills > li > a:focus {
+		font-size: 17px;
+		padding: 5%;
+	}
+}
+
